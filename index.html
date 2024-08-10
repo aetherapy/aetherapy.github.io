@@ -4,42 +4,43 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - My Portfolio</title>
+    <title>Website name</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
 
-  <script>
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-    var menu = document.getElementById('menu');
-    menu.classList.toggle('hidden');
-    });
-  </script>
 
   <body class="bg-gray-100 text-gray-800">
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md">
+    <nav class="bg-white shadow-lg">
       <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-bold text-indigo-600">My Portfolio</a>
-        <button id="menu-toggle" class="text-gray-700 hover:text-indigo-600 md:hidden">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <a id="website-name" href="index.html" class="text-2xl font-bold text-indigo-600">Website name</a>
+        <button id="menu-toggle" class="text-gray-700 hover:text-indigo-600 lg:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
-        <div id="menu" class="hidden md:flex">
+        <div id="menu" class="hidden flex flex-col lg:flex-row lg:items-center w-full lg:w-auto lg:block">
           <a href="about_me.html" class="text-gray-700 hover:text-indigo-600 mx-4">About me</a>
           <a href="about_the_therapy.html" class="text-gray-700 hover:text-indigo-600 mx-4">About the therapy</a>
           <a href="faq.html" class="text-gray-700 hover:text-indigo-600 mx-4">Frequently asked questions</a>
           <a href="#contact" class="text-gray-700 hover:text-indigo-600 mx-4">Contact</a>
         </div>
+        <button id="menu-close" class="text-gray-700 hover:text-indigo-600 lg:hidden hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
       </div>
     </nav>
+
 
     <!-- Hero Section -->
     <section class="bg-indigo-600 text-white py-20">
       <div class="container mx-auto text-center">
-        <h1 class="text-5xl font-bold mb-4">Hello, I'm [Your Name]</h1>
+        <h1 class="text-5xl font-bold mb-4">Hello, I'm Agathe</h1>
         <p class="text-xl">A Passionate Developer</p>
         <a href="projects.html" class="mt-8 inline-block bg-white text-indigo-600 px-6 py-3 rounded-lg shadow hover:bg-gray-100">View My Work</a>
       </div>
@@ -114,6 +115,24 @@
       <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
 
+
+    <script>
+      function toggle_menu() {
+          var menu = document.getElementById('menu');
+          menu.classList.toggle('hidden');
+
+          var menu_toggle = document.getElementById('menu-toggle');
+          menu_toggle.classList.toggle('hidden');
+          var menu_close = document.getElementById('menu-close');
+          menu_close.classList.toggle('hidden');
+
+          var website_name = document.getElementById('website-name');
+          website_name.classList.toggle('hidden');
+      };
+
+      document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
+      document.getElementById('menu-close').addEventListener('click', toggle_menu);
+    </script>
   </body>
 
 </html>
