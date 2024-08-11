@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - My Portfolio</title>
+    <title>FAQ - AE Therapy for Internationals</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
+  </head>
 
-<body class="bg-gray-100 text-gray-800">
+  <body class="bg-gray-100 text-gray-800">
 
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
@@ -35,40 +35,89 @@
       </div>
     </nav>
 
-    <!-- About Section -->
-    <section class="py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-indigo-600 mb-8">About Me</h2>
-            <p class="text-center max-w-2xl mx-auto text-lg">
-              FAQQQQQQQQQQQQQQQQq
-            </p>
-        </div>
-    </section>
+    <div class="py-24 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+      <div class="flex flex-col text-left basis-1/2">
+        <p class="sm:text-4xl text-3xl font-extrabold text-base-content">Frequently Asked Questions</p>
+      </div>
+      <ul class="basis-1/2">
+        <li>
+          <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
+            <span class="flex-1 text-base-content">How secure is my insurance information?</span>
+            <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+            </svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+            <div class="pb-5 leading-relaxed">
+              <div class="space-y-2 leading-relaxed">We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
+            <span class="flex-1 text-base-content">How can I customize my insurance coverage?</span>
+            <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+            </svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+            <div class="pb-5 leading-relaxed">
+              <div class="space-y-2 leading-relaxed">Our insurance plans are customizable. You can tailor your coverage to meet your specific needs and budget.</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
+            <span class="flex-1 text-base-content">Is there a waiting period for insurance claims?</span>
+            <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+            </svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+            <div class="pb-5 leading-relaxed">
+              <div class="space-y-2 leading-relaxed">There may be a waiting period for certain insurance claims, depending on the policy terms and conditions. Please refer to your policy documents for details.</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      function toggleFAQ(button) {
+          const content = button.nextElementSibling;
+          button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
+          content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
+      }
+    </script>
+
 
     <!-- Contact Section -->
     <section id="contact" class="py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-indigo-600 mb-8">Contact Me</h2>
-            <form class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-8">
-                <div class="mb-4">
-                    <label for="name" class="block text-gray-700 font-bold">Name</label>
-                    <input type="text" id="name" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700 font-bold">Email</label>
-                    <input type="email" id="email" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-gray-700 font-bold">Message</label>
-                    <textarea id="message" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" rows="5"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-bold hover:bg-indigo-500">Send Message</button>
-            </form>
-        </div>
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-indigo-600 mb-8">Contact Me</h2>
+        <form class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-8">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-bold">Name</label>
+            <input type="text" id="name" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-bold">Email</label>
+            <input type="email" id="email" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-bold">Message</label>
+            <textarea id="message" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" rows="5"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-bold hover:bg-indigo-500">Send Message</button>
+        </form>
+      </div>
     </section>
 
     <footer class="bg-gray-800 text-white py-4 text-center">
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
 
     <script>
@@ -88,6 +137,6 @@
       document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
       document.getElementById('menu-close').addEventListener('click', toggle_menu);
     </script>
-</body>
+  </body>
 
 </html>
