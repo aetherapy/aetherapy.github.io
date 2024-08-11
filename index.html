@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
     <style>
       .hero {
-      background-color: rgba(123, 157, 134, 1.0); /* 50% opacity */
+      background-color: rgba(123, 157, 134, 1.0); /* 50% opacity on mobile */
       }
       @media (max-width: 800px) {
       .hero {
-      background-color: rgba(123, 157, 134, 0.8);
+      background-color: rgba(123, 157, 134, 0.8); /* 100% opacity otherwise */
       font-size: 20px;
       }
       }
@@ -24,7 +24,6 @@
 
 
   <body class="bg-gray-100 text-gray-800" style="font-family: 'Montserrat', sans-serif;">
-
     <!-- Navigation -->
     <nav class="shadow-lg" style="background-color: #f4f3f1;">
       <div class="container mx-auto px-4 py-2 flex justify-between items-center">
@@ -49,8 +48,9 @@
       </div>
     </nav>
 
+
     <!-- Hero Section -->
-    <section class="text-white lg:py-20" style="background-image: url('img/flowers.jpg'); background-size: cover; background-position: center;">
+    <section class="text-white lg:py-20" style="background-image: url('img/flowers_blur.jpg'); background-size: cover; background-position: center;">
       <div class="text-center p-20 mx-auto max-w-3xl hero" >
         <h1 class="text-3xl lg:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
         <p class="text-md lg:text-xl">Currently no waiting time (updated on 10/08/2024)</p>
@@ -75,9 +75,9 @@
         </p>
         <img src="img/profile.jpg" alt="Therapist" class="mx-auto mb-16 w-md">
         <a href="about_me.html" class="text-center block bg-transparent text-white-600 px-6 py-3 rounded-lg border-black border w-80 mx-auto">Learn more about me</a>
-
       </div>
     </section>
+
 
     <section id="hello2" class="py-16" style="background-color: #f9e7c2;">
       <div class="px-4 mx-auto max-w-3xl">
@@ -99,6 +99,11 @@
     <section id="contact" class="py-20" style="background-color: #fff3d5;">
       <div class="container mx-auto max-w-3xl px-4">
         <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Contact</h1>
+        <p class="text-lg lg:text-2xl font-light mb-8">
+          You can reach me using the form below or by email at
+          <a class="underline" href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>
+          to schedule a free 20-minute initial telephone consultation.
+        </p>
         <form class="max-w-3xl bg-white shadow-md rounded-lg p-8">
           <div class="mb-4">
             <label for="name" class="block text-gray-500 font-bold">Name</label>
@@ -140,59 +145,4 @@
       document.getElementById('menu-close').addEventListener('click', toggle_menu);
     </script>
   </body>
-
 </html>
-
-
-
-<!--       <section class="text-white lg:py-20" style="background-image: url('img/flowers.jpg'); background-size: cover; background-position: center;"> -->
-<!--       <div class="text-center p-20 mx-auto max-w-3xl" style="background-color: #7b9d86;"> -->
-<!-- make the green box semi transparent when the width of the page is smaller than lg -->
-
-
-<!-- Sure! You can achieve that with a combination of Tailwind CSS classes and custom CSS. -->
-
-<!-- ```html -->
-<!-- <div class="text-center p-20 mx-auto max-w-3xl lg:bg-opacity-100" style="background-color: #7b9d86;"> -->
-<!-- ``` -->
-
-<!-- And the custom CSS for responsiveness: -->
-
-<!-- ```css -->
-<!-- <style> -->
-<!-- @media (max-width: 1024px) { -->
-<!--   .lg\\:bg-opacity-100 { -->
-<!--     background-color: rgba(123, 157, 134, 0.5); /* 50% opacity */ -->
-<!--   } -->
-<!-- } -->
-<!-- </style> -->
-<!-- ``` -->
-
-<!--             .hero { -->
-<!--       background-color: rgba(123, 157, 134, 0.5); /* 50% opacity */ -->
-<!--       } -->
-
-<!--       @media (width: 600px) { -->
-<!--       .hero { -->
-<!--       background-color: rgba(123, 157, 134, 1.0); -->
-<!--       } -->
-<!--       } -->
-<!-- why doesnt this work for a resizing div? -->
-
-
-
-<!-- It looks like you might be trying to apply styles to a `div` with a class of `hero` that should change when the viewport width is 600px. Here's a correct example to do that: -->
-
-<!-- ```css -->
-<!-- .hero { -->
-<!--   background-color: rgba(123, 157, 134, 0.5); /* Default background color */ -->
-<!-- } -->
-
-<!-- @media (max-width: 600px) { -->
-<!--   .hero { -->
-<!--     background-color: rgba(123, 157, 134, 1); /* Background color when viewport <= 600px */ -->
-<!--   } -->
-<!-- } -->
-<!-- ``` -->
-
-<!-- Ensure the stylesheets are properly linked in your HTML and check the developer tools to see if the media query is being applied properly. -->
