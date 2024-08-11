@@ -7,17 +7,28 @@
     <title>Website name</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+      .hero {
+      background-color: rgba(123, 157, 134, 1.0); /* 50% opacity */
+      }
+      @media (max-width: 800px) {
+      .hero {
+      background-color: rgba(123, 157, 134, 0.8);
+      font-size: 20px;
+      }
+      }
+    </style>
+
   </head>
 
 
   <body class="bg-gray-100 text-gray-800" style="font-family: 'Montserrat', sans-serif;">
+
     <!-- Navigation -->
     <nav class="shadow-lg" style="background-color: #f4f3f1;">
       <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-        <a id="website-name" href="/" class="text-2xl font-bold" style="color: #488f79;">AE Therapy for internationals</a>
+        <a id="website-name" href="/" class="text-5xl font-light" style="color: #488f79; font-family: 'Comfortaa', sans-serif;">AE Therapy</a>
         <button id="menu-toggle" class="text-gray-700 hover:text-green-600 lg:hidden">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                xmlns="http://www.w3.org/2000/svg">
@@ -25,10 +36,10 @@
           </svg>
         </button>
         <div id="menu" class="hidden flex flex-col lg:flex-row lg:items-center w-full lg:w-auto lg:block">
-          <a href="about_me.html" class="text-gray-700 hover:text-green-600 mx-4">About me</a>
-          <a href="about_the_therapy.html" class="text-gray-700 hover:text-green-600 mx-4">About the therapy</a>
-          <a href="faq.html" class="text-gray-700 hover:text-green-600 mx-4">Frequently asked questions</a>
-          <a href="#contact" class="text-gray-700 hover:text-green-600 mx-4">Contact</a>
+          <a href="about_me.html" class="text-xl text-gray-700 hover:text-green-600 mx-4">About me</a>
+          <a href="about_the_therapy.html" class="text-xl text-gray-700 hover:text-green-600 mx-4">About the therapy</a>
+          <a href="faq.html" class="text-xl text-gray-700 hover:text-green-600 mx-4">Frequently asked questions</a>
+          <a href="#contact" class="text-xl text-gray-700 hover:text-green-600 mx-4">Contact</a>
         </div>
         <button id="menu-close" class="text-gray-700 hover:text-green-600 lg:hidden hidden">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -40,8 +51,8 @@
 
     <!-- Hero Section -->
     <section class="text-white lg:py-20" style="background-image: url('img/flowers.jpg'); background-size: cover; background-position: center;">
-      <div class="text-center p-20 mx-auto max-w-3xl" style="background-color: #7b9d86;">
-        <h1 class="text-xl lg:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or Online</h1>
+      <div class="text-center p-20 mx-auto max-w-3xl hero" >
+        <h1 class="text-3xl lg:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
         <p class="text-md lg:text-xl">Currently no waiting time (updated on 10/08/2024)</p>
         <a href="#contact" class="mt-8 inline-block bg-transparent text-white-600 px-6 py-3 rounded-lg border-white border hover:bg-green-900">Book a session</a>
       </div>
@@ -51,40 +62,44 @@
     <!-- About Section -->
     <section id="hello" class="py-16" style="background-color: #fff3d5;">
       <div class="px-4 mx-auto max-w-3xl">
-        <h1 class="text-xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">About me</h1>
+        <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">About me</h1>
         <p class="text-lg lg:text-2xl font-light mb-8">
-          I am <strong>Agathe</strong>, a licensed therapist based in Utrecht. I have master’s degrees in <em>Clinical Psychology</em> and <em>Social and Health Psychology</em> from the University of Utrecht. I have experience working with individuals and organizations.
+          I am Agathe, a licensed therapist, and member of the NIP association,
+          based in Utrecht. I have master’s degrees in Clinical Psychology and
+          Social and Health Psychology from the University of Utrecht. I have
+          experience working with individuals and organizations.
         </p>
-        <p class="text-lg lg:text-2xl font-light mb-8">
-          I offer individual therapy in <strong>French</strong> and <strong>English</strong> both <strong>in person</strong> and <strong>online.</strong>
+        <p class="text-lg lg:text-2xl mb-16">
+          I offer individual therapy to adults (18 years+) in French and
+          English. Sessions can take place in person or online.
         </p>
-
-        <img src="img/profile.jpg" alt="Therapist" class="mx-auto mb-8 w-md">
-        <!-- Learn more <a href="about_me.html" class="text-center text-green-600 hover:text-green-500 decoration-2 hover:underline focus:outline-none focus:underline opacity-90">about Agathe</a> and her <a href="about_the_therapy.html" class="text-center text-green-600 hover:text-green-500 decoration-2 hover:underline focus:outline-none focus:underline opacity-90">approach to therapy.</a> -->
-        <a href="about_me.html" class="mt-8 text-center block bg-transparent text-white-600 px-6 py-3 rounded-lg border-black border w-72 mx-auto">Learn more about me</a>
+        <img src="img/profile.jpg" alt="Therapist" class="mx-auto mb-16 w-md">
+        <a href="about_me.html" class="text-center block bg-transparent text-white-600 px-6 py-3 rounded-lg border-black border w-80 mx-auto">Learn more about me</a>
 
       </div>
     </section>
 
     <section id="hello2" class="py-16" style="background-color: #f9e7c2;">
       <div class="px-4 mx-auto max-w-3xl">
-        <h1 class="text-xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">About the therapy</h1>
-        <p class="text-lg lg:text-2xl font-light mb-8">
-          Through a combination of talk therapy and body-centered techniques, I support my clients to gain a deeper understanding of the ways their thoughts and emotions are connected to their physical sensations.
+        <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">About the therapy</h1>
+        <p class="text-lg lg:text-2xl font-light mb-16">
+          Through the psychotherapy process, we explore our feelings and
+          behaviors to gain valuable insight into ourselves. With better
+          understanding, we get more agency over our lives and can create a
+          unique environment that suits us. We either remove or learn how to
+          handle stressors and obstacles, freeing the path to reaching our
+          goals.
         </p>
-        <p class="text-lg lg:text-2xl font-light mb-8">
-          The first step is a free call so can get to know each other and discuss why ...., we start blablabl....
-        </p>
-        <a href="about_me.html" class="mt-8 text-center block bg-transparent text-white-600 px-6 py-3 rounded-lg border-black border  w-72 mx-auto">Learn more about the therapy</a>
+        <a href="about_the_therapy.html" class="text-center block bg-transparent text-white-600 px-6 py-3 rounded-lg border-black border  w-80 mx-auto">Learn more about the therapy</a>
       </div>
     </section>
 
 
     <!-- Contact Section -->
     <section id="contact" class="py-20" style="background-color: #fff3d5;">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-8" style="color: #424f46;">Contact</h2>
-        <form class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-8">
+      <div class="container mx-auto max-w-3xl px-4">
+        <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Contact</h1>
+        <form class="max-w-3xl bg-white shadow-md rounded-lg p-8">
           <div class="mb-4">
             <label for="name" class="block text-gray-500 font-bold">Name</label>
             <input type="text" id="name" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
@@ -103,7 +118,7 @@
     </section>
 
     <footer class="text-white py-4 text-center" style="background-color: #424f46;">
-      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+      <p>&copy; 2024 Agathe Eisele. All rights reserved.</p>
     </footer>
 
 
@@ -127,3 +142,57 @@
   </body>
 
 </html>
+
+
+
+<!--       <section class="text-white lg:py-20" style="background-image: url('img/flowers.jpg'); background-size: cover; background-position: center;"> -->
+<!--       <div class="text-center p-20 mx-auto max-w-3xl" style="background-color: #7b9d86;"> -->
+<!-- make the green box semi transparent when the width of the page is smaller than lg -->
+
+
+<!-- Sure! You can achieve that with a combination of Tailwind CSS classes and custom CSS. -->
+
+<!-- ```html -->
+<!-- <div class="text-center p-20 mx-auto max-w-3xl lg:bg-opacity-100" style="background-color: #7b9d86;"> -->
+<!-- ``` -->
+
+<!-- And the custom CSS for responsiveness: -->
+
+<!-- ```css -->
+<!-- <style> -->
+<!-- @media (max-width: 1024px) { -->
+<!--   .lg\\:bg-opacity-100 { -->
+<!--     background-color: rgba(123, 157, 134, 0.5); /* 50% opacity */ -->
+<!--   } -->
+<!-- } -->
+<!-- </style> -->
+<!-- ``` -->
+
+<!--             .hero { -->
+<!--       background-color: rgba(123, 157, 134, 0.5); /* 50% opacity */ -->
+<!--       } -->
+
+<!--       @media (width: 600px) { -->
+<!--       .hero { -->
+<!--       background-color: rgba(123, 157, 134, 1.0); -->
+<!--       } -->
+<!--       } -->
+<!-- why doesnt this work for a resizing div? -->
+
+
+
+<!-- It looks like you might be trying to apply styles to a `div` with a class of `hero` that should change when the viewport width is 600px. Here's a correct example to do that: -->
+
+<!-- ```css -->
+<!-- .hero { -->
+<!--   background-color: rgba(123, 157, 134, 0.5); /* Default background color */ -->
+<!-- } -->
+
+<!-- @media (max-width: 600px) { -->
+<!--   .hero { -->
+<!--     background-color: rgba(123, 157, 134, 1); /* Background color when viewport <= 600px */ -->
+<!--   } -->
+<!-- } -->
+<!-- ``` -->
+
+<!-- Ensure the stylesheets are properly linked in your HTML and check the developer tools to see if the media query is being applied properly. -->
