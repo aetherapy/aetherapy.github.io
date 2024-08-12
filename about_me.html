@@ -26,7 +26,7 @@
   <body class="bg-gray-100 text-gray-800" style="font-family: 'Montserrat', sans-serif;">
     <!-- Navigation -->
     <nav class="shadow-lg" style="background-color: #f9e7c2;">
-      <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div class="container mx-auto px-4 py-2 flex justify-between items-baseline">
         <a id="website-name" href="/" class="text-5xl font-light mt-4 mb-2" style="color: #488f79; font-family: 'Sorts Mill Goudy', sans-serif;">AE Therapy</a>
         <button id="menu-toggle" class="text-gray-700 hover:text-green-600 xl:hidden">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -108,15 +108,15 @@
           <input type="hidden" name="access_key" value="ce3d1bec-322b-4cdf-ae2f-b71a77d0d232">
           <!-- Form Inputs. Each input must have a name="" attribute -->
           <div class="mb-4">
-            <label for="name" class="block text-gray-500 font-bold">Full name</label>
+            <label for="name" class="block text-gray-500"><strong>Full name</strong> (required)</label>
             <input type="text" name="Full name" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
           </div>
           <div class="mb-4">
-            <label for="email" class="block text-gray-500 font-bold">Email</label>
+            <label for="email" class="block text-gray-500"><strong>Email</strong> (required)</label>
             <input type="email" name="Email" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
           </div>
           <div class="mb-4">
-            <label for="message" class="block text-gray-500 font-bold">Message</label>
+            <label for="message" class="block text-gray-500"><strong>Message</strong> (required)</label>
             <textarea name="Message" required class="h-48 w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
           </div>
           <!-- Honeypot Spam Protection -->
