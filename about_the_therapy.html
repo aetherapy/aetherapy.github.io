@@ -4,38 +4,44 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About the therapy</title>
+    <title>AE Therapy for internationals</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+      .hero {
+      background-color: rgba(123, 157, 134, 1.0); /* 50% opacity on mobile */
+      }
+      @media (max-width: 800px) {
+      .hero {
+      background-color: rgba(123, 157, 134, 0.8); /* 100% opacity otherwise */
+      font-size: 20px;
+      }
+      }
+    </style>
+
   </head>
-  <script>
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-        var menu = document.getElementById('menu');
-        menu.classList.toggle('hidden');
-    });
-  </script>
 
 
-
-  <body class="bg-gray-100 text-gray-800">
-
+  <body class="bg-gray-100 text-gray-800" style="font-family: 'Montserrat', sans-serif;">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
+    <nav class="shadow-lg" style="background-color: #f4f3f1;">
       <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-        <a id="website-name" href="/" class="text-2xl font-bold text-indigo-600">Website name</a>
-        <button id="menu-toggle" class="text-gray-700 hover:text-indigo-600 lg:hidden">
+        <a id="website-name" href="/" class="text-5xl font-light mt-4 mb-2" style="color: #488f79; font-family: 'Sorts Mill Goudy', sans-serif;">AE Therapy</a>
+        <button id="menu-toggle" class="text-gray-700 hover:text-green-600 xl:hidden">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
-        <div id="menu" class="hidden flex flex-col lg:flex-row lg:items-center w-full lg:w-auto lg:block">
-          <a href="about_me.html" class="text-gray-700 hover:text-indigo-600 mx-4">About the therapy</a>
-          <a href="about_the_therapy.html" class="text-gray-700 hover:text-indigo-600 mx-4">About the therapy</a>
-          <a href="faq.html" class="text-gray-700 hover:text-indigo-600 mx-4">Frequently asked questions</a>
-          <a href="#contact" class="text-gray-700 hover:text-indigo-600 mx-4">Contact</a>
+        <div id="menu" class="hidden flex flex-col xl:flex-row xl:items-center w-full xl:w-auto xl:block">
+          <a href="/" class="text-xl text-gray-700 hover:text-green-600 mx-4">Home</a>
+          <a href="about_me.html" class="text-xl text-gray-700 hover:text-green-600 mx-4">About me</a>
+          <a href="about_the_therapy.html" class="text-xl text-gray-700 hover:text-green-600 mx-4">About the therapy</a>
+          <a href="faq.html" class="text-xl text-gray-700 hover:text-green-600 mx-4">Frequently asked questions</a>
+          <a href="#contact" class="text-xl text-gray-700 hover:text-green-600 mx-4">Contact</a>
         </div>
-        <button id="menu-close" class="text-gray-700 hover:text-indigo-600 lg:hidden hidden">
+        <button id="menu-close" class="text-gray-700 hover:text-green-600 xl:hidden hidden">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
@@ -45,81 +51,108 @@
 
 
     <!-- About Section -->
-    <section class="py-20">
-      <div class="container mx-auto px-4">
-        <p class="text-center max-w-2xl mx-auto text-lg">
-          Through the psychotherapy process, we explore our feelings and behaviors to gain valuable insight into ourselves. With better understanding, we get more agency over our lives and can create a unique environment that suits us. We either get rid of or learn how to handle stressors and obstacles, freeing the path to reaching our goals.
+    <section class="py-20" style="background-color: #f9e7c2;">
+      <div class="container mx-auto px-4 max-w-2xl">
+        <p class="max-w-2xl mx-auto text-lg">
+          Through the psychotherapy process, we explore our feelings and
+          behaviors to gain valuable insight into ourselves. With better
+          understanding, we get more agency over our lives and can create a
+          unique environment that suits us. We either get rid of or learn how
+          to handle stressors and obstacles, freeing the path to reaching our
+          goals.
         </p>
 
-        <h2 class="text-4xl font-bold text-center text-indigo-600 my-8">My approach</h2>
-
-        <p class="text-center max-w-2xl mx-auto text-lg">
-          As a psychologist, my priority is to create a safe place where you feel heard, understood, and comfortable. Entering a session is like entering a bubble where you can let anything go and receive the support you need.
-          I am genuinely interested in knowing who you are and what you have experienced in life. Since each person is unique, the therapy I offer is always tailored to you and your specific needs. From the very beginning of the therapy process, we set your personal goals, and together, we work towards achieving those goals. The main techniques I use for that purpose are cognitive behavioral therapy, schema therapy, mindfulness, and acceptance and commitment therapy.
+        <h2 class="text-2xl lg:text-5xl mb-4 mt-8" style="font-family: 'Sorts Mill Goudy', serif;">My approach</h1>
+        <p class="max-w-2xl mx-auto text-lg">
+          As a psychologist, my priority is to create a safe place where you
+          feel heard, understood, and comfortable. Entering a session is like
+          entering a bubble where you can let anything go and receive the
+          support you need. I am genuinely interested in knowing who you are
+          and what you have experienced in life. Since each person is unique,
+          the therapy I offer is always tailored to you and your specific
+          needs. From the very beginning of the therapy process, we set your
+          personal goals, and together, we work towards achieving those goals.
+          The main techniques I use for that purpose are cognitive behavioral
+          therapy, schema therapy, mindfulness, and acceptance and commitment
+          therapy.
         </p>
 
-        <h2 class="text-4xl font-bold text-center text-indigo-600 my-8">For whom</h2>
-        <p class="text-center max-w-2xl mx-auto text-lg">
-          If you are encountering some difficulties or are interested in getting to know yourself better and growing, you are in the right place.
-          I specialize in handling anxiety, low moods, feelings of emptiness, traumas, sleeping problems, interpersonal difficulties, complex family dynamics, anger issues, and self-esteem issues.
-          As an expat myself, I also like to offer counseling on problems related to living abroad. These can include struggles with cultural differences, learning languages, homesickness, feeling lonely, etc.
+        <h2 class="text-2xl lg:text-5xl mb-4 mt-8" style="font-family: 'Sorts Mill Goudy', serif;">For whom</h1>
+        <p class="max-w-2xl mx-auto text-lg">
+          If you are encountering some difficulties or are interested in
+          getting to know yourself better and growing, you are in the right
+          place. I specialize in handling anxiety, low moods, feelings of
+          emptiness, traumas, sleeping problems, interpersonal difficulties,
+          complex family dynamics, anger issues, and self-esteem issues. As an
+          expat myself, I also like to offer counseling on problems related to
+          living abroad. These can include struggles with cultural differences,
+          learning languages, homesickness, feeling lonely, etc.
         </p>
 
 
-        <h2 class="text-4xl font-bold text-center text-indigo-600 my-8">Cost</h2>
-        <p class="text-center max-w-2xl mx-auto text-lg">
-          The first meeting is free. During this 30-minute call, we get to know each other. If you feel that there is a click and I estimate that I can provide help, then we go further. We can plan right away the next session and the therapy process starts.
-          The price of a 60-minute session is 90 euros and includes all administrative costs.
-          Because I want to promote more inclusive and equitable mental health, the costs can be adapted depending on your income.
+        <h2 class="text-2xl lg:text-5xl mb-4 mt-8" style="font-family: 'Sorts Mill Goudy', serif;">Cost</h1>
+        <p class="max-w-2xl mx-auto text-lg">
+          The first meeting is free. During this 30-minute call, we get to know
+          each other. If you feel that there is a click and I estimate that I
+          can provide help, then we go further. We can plan right away the next
+          session and the therapy process starts. The price of a 60-minute
+          session is 90 euros and includes all administrative costs. Because I
+          want to promote more inclusive and equitable mental health, the costs
+          can be adapted depending on your income.
         </p>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-indigo-100">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center text-indigo-600 mb-8">Contact Me</h2>
-        <form class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-8">
+    <section id="contact" class="py-20" style="background-color: #fff3d5;">
+      <div class="container mx-auto max-w-3xl px-4">
+        <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Contact</h1>
+        <p class="text-lg lg:text-2xl font-light mb-8">
+          You can reach me using the form below or by email at
+          <a class="underline" href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>
+          to schedule a free 20-minute initial telephone consultation.
+        </p>
+        <form class="max-w-3xl bg-white shadow-md rounded-lg p-8">
           <div class="mb-4">
-            <label for="name" class="block text-gray-700 font-bold">Name</label>
-            <input type="text" id="name" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+            <label for="name" class="block text-gray-500 font-bold">Name</label>
+            <input type="text" id="name" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
           </div>
           <div class="mb-4">
-            <label for="email" class="block text-gray-700 font-bold">Email</label>
-            <input type="email" id="email" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+            <label for="email" class="block text-gray-500 font-bold">Email</label>
+            <input type="email" id="email" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
           </div>
           <div class="mb-4">
-            <label for="message" class="block text-gray-700 font-bold">Message</label>
-            <textarea id="message" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" rows="5"></textarea>
+            <label for="message" class="block text-gray-500 font-bold">Message</label>
+            <textarea id="message" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" rows="5"></textarea>
           </div>
-          <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-bold hover:bg-indigo-500">Send Message</button>
+          <button type="submit" class="w-full text-white py-3 rounded-lg font-bold" style="background-color: #7b9d86;">Send Message</button>
         </form>
       </div>
     </section>
 
 
 
-    <footer class="bg-gray-800 text-white py-4 text-center">
-      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    <footer class="text-black py-4 text-center" style="background-color: #c1b8a2;">
+      <p>&copy; 2024 Agathe Eisele. All rights reserved.</p>
     </footer>
+
 
     <script>
       function toggle_menu() {
-          var menu = document.getElementById('menu');
-          menu.classList.toggle('hidden');
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
 
-          var menu_toggle = document.getElementById('menu-toggle');
-          menu_toggle.classList.toggle('hidden');
-          var menu_close = document.getElementById('menu-close');
-          menu_close.classList.toggle('hidden');
+      var menu_toggle = document.getElementById('menu-toggle');
+      menu_toggle.classList.toggle('hidden');
+      var menu_close = document.getElementById('menu-close');
+      menu_close.classList.toggle('hidden');
 
-          var website_name = document.getElementById('website-name');
-          website_name.classList.toggle('hidden');
+      var website_name = document.getElementById('website-name');
+      website_name.classList.toggle('hidden');
       };
 
       document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
       document.getElementById('menu-close').addEventListener('click', toggle_menu);
     </script>
   </body>
-
 </html>
