@@ -25,7 +25,7 @@
 
   <body class="bg-gray-100 text-gray-800" style="font-family: 'Montserrat', sans-serif; background-color: #f9e7c2;">
     <!-- Navigation -->
-    <nav class="" style="background-color: #f9e7c2;">
+    <nav class="" style="background-color: #fff3d5;">
       <div class="container mx-auto px-4 py-2 flex justify-between items-center">
         <a id="website-name" href="/" class="text-5xl font-light mt-4 mb-2" style="color: #488f79; font-family: 'Sorts Mill Goudy', sans-serif;">AE Therapy</a>
         <button id="menu-toggle" class="text-gray-700 hover:text-green-600 xl:hidden">
@@ -50,19 +50,20 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="text-white mt-12 py-24 lg:py-48" style="background-image: url('img/forest.jpg'); background-size: cover; background-position: center; background-color: #f9e7c2;">
-      <!-- <div class="text-center px-8 py-20 xl:p-20 mx-auto max-w-3xl hero" > -->
-      <!--   <h1 class="text-3xl lg:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1> -->
+    <section class="text-white" style="background-image: url('img/forest.jpg'); background-size: cover; background-position: center; background-color: #fff3d5;">
+      <div class="w-full h-72" style="background-color: rgba(198, 193, 171, 0.8);">
+      <!-- <h1 class="text-3xl lg:text-6xl mb-4" style="font-family: 'Sorts
+      Mill Goudy', serif;">Individual therapy in Utrecht or online</h1> -->
       <!--   <p class="text-md lg:text-xl">Currently no waiting time</p> -->
       <!--   <p class="text-md lg:text-xl">(updated on 10/08/2024)</p> -->
 
       <!--   <a href="#contact" class="mt-8 inline-block bg-transparent text-white-600 px-6 py-3 rounded-lg border-white border hover:bg-green-900">Book a session</a> -->
-      <!-- </div> -->
+      </div>
     </section>
 
 
     <!-- About Section -->
-    <section class="py-20 text-lg lg:text-xl font-light" style="background-color: #f9e7c2;">
+    <section class="py-24 text-lg lg:text-xl font-light" style="background-color: #fff3d5;">
       <div class="container mx-auto px-4 max-w-3xl">
         <p>
           As a psychologist, my priority is to create a safe place where you
@@ -73,13 +74,17 @@
           the therapy I offer is always tailored to you and your specific
           needs. From the very beginning of the therapy process, we set your
           personal goals, and together, we work towards achieving those goals.
-          The main techniques I use for that purpose are <strong>cognitive behavioral
-          therapy</strong>, <strong>schema therapy</strong>, <strong>mindfulness</strong>, and <strong>acceptance and commitment
-          therapy</strong>.
+          The main techniques I use for that purpose are <strong>Cognitive Behavioral
+          therapy</strong> (CBT), <strong>Schema therapy</strong>, <strong>Acceptance and Commitment
+          therapy</strong> (ACT), and <strong>Mindfulness</strong>.
         </p>
+        <img src="img/hands.jpg" alt="Therapist" class="mt-16">
+      </div>
+    </section>
 
-        <img src="img/hands.jpg" alt="Therapist" class="my-16">
-        <h2 class="text-4xl lg:text-5xl mb-4 mt-8" style="font-family: 'Sorts Mill Goudy', serif;">For whom</h1>
+    <section class="py-24 text-lg lg:text-xl font-light" style="background-color: #f9e7c2;">
+      <div class="container mx-auto px-4 max-w-3xl">
+      <h2 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">For whom</h1>
         <p>
           If you are encountering some difficulties or are interested in
           getting to know yourself better and growing, you are in the right
@@ -109,29 +114,35 @@
     <section id="contact" class="py-20" style="background-color: #fff3d5;">
       <div class="container mx-auto max-w-3xl px-4">
         <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Contact</h1>
-        <p class="text-lg lg:text-lg font-light mb-8">
+        <p class="text-lg lg:text-2xl font-light mb-8">
           You can reach me using the form below or by email at
           <a class="underline" href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>
           to schedule a free 30-minute initial telephone consultation.
         </p>
-        <form class="max-w-3xl bg-white shadow-md rounded-lg p-8">
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="max-w-3xl bg-white shadow-md rounded-lg p-8">
+          <input type="hidden" name="access_key" value="ce3d1bec-322b-4cdf-ae2f-b71a77d0d232">
+          <!-- Form Inputs. Each input must have a name="" attribute -->
           <div class="mb-4">
-            <label for="name" class="block text-gray-500 font-bold">Name</label>
-            <input type="text" id="name" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+            <label for="name" class="block text-gray-500 font-bold">Full name</label>
+            <input type="text" name="Full name" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
           </div>
           <div class="mb-4">
             <label for="email" class="block text-gray-500 font-bold">Email</label>
-            <input type="email" id="email" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+            <input type="email" name="Email" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
           </div>
           <div class="mb-4">
             <label for="message" class="block text-gray-500 font-bold">Message</label>
-            <textarea id="message" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" rows="5"></textarea>
+            <textarea name="Message" required class="h-48 w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
           </div>
-          <button type="submit" class="w-full text-white py-3 rounded-lg font-bold" style="background-color: #7b9d86;">Send Message</button>
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <!-- Custom Confirmation / Success Page -->
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+          <button type="submit" class="w-full text-white py-3 rounded-lg font-bold" style="background-color: #7b9d86;">Send message</button>
         </form>
       </div>
     </section>
-
 
     <footer class="text-black py-4 text-center" style="background-color: #c1b8a2;">
       <p>&copy; 2024 Agathe Eisele. All rights reserved.</p>
