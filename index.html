@@ -115,10 +115,13 @@
     <section id="contact" class="py-20" style="background-color: #fff3d5;">
       <div class="container mx-auto max-w-3xl px-4">
         <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Contact</h1>
+        <h2 class="text-2xl lg:text-3xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Schedule a free initial 30-minute appointment</h1>
         <p class="text-lg font-light mb-8">
-          You can reach me using the form below or by email at
-          <a class="underline" href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>
-          to schedule a <strong>free 30-minute initial telephone or online consultation</strong>.
+          Reach me by email at
+          <a class="underline"
+          href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>
+          or via the contact form below. Tell me a little bit about yourself
+          and the reasons that led you to contact me.
         </p>
 
         <form action="https://api.web3forms.com/submit" method="POST" class="max-w-3xl bg-white shadow-md rounded-lg p-8">
@@ -133,9 +136,14 @@
             <input type="email" name="Email" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
           </div>
           <div class="mb-4">
-            <label for="message" class="block text-gray-500"><strong>Tell me a little bit about yourself and what you're seeking from therapy</strong> (required)</label>
+            <label for="message" class="block text-gray-500"><strong>Message</strong> (required)</label>
             <textarea name="Message" required class="h-48 w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
           </div>
+          <div class="mb-4">
+            <label for="foundvia" class="block text-gray-500"><strong>How did you hear about me?</strong> (It's complicated, social media, other)</label>
+            <input type="text" name="FoundVia" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+          </div>
+
           <!-- Honeypot Spam Protection -->
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <!-- Custom Confirmation / Success Page -->
@@ -146,6 +154,7 @@
     </section>
 
     <footer class="text-black py-4 text-center" style="background-color: #c1b8a2;">
+      <img src="img/nip.png" alt="Therapist" class="mx-auto w-48 my-8">
       <p>&copy; 2024 Agathe Eisele. All rights reserved.</p>
     </footer>
 
