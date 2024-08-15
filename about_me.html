@@ -73,35 +73,40 @@
     <section id="contact" class="py-20" style="background-color: #fff3d5;">
       <div class="container mx-auto max-w-3xl px-4">
         <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Contact</h1>
-        <p class="text-lg font-light mb-8">
-          You can reach me using the form below or by email at
-          <a class="underline" href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>
-          to schedule a <strong>free 30-minute initial telephone or online consultation</strong>.
-        </p>
+        <h2 class="text-2xl lg:text-3xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Schedule a free initial 30-minute appointment</h1>
+<p class="text-lg font-light mb-8">
+  Reach me by email at
+  <a class="underline"
+     href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>
+  or via the contact form below. Tell me a little bit about yourself
+  and the reasons that led you to contact me.
+</p>
 
-        <form action="https://api.web3forms.com/submit" method="POST" class="max-w-3xl bg-white shadow-md rounded-lg p-8">
-          <input type="hidden" name="access_key" value="ce3d1bec-322b-4cdf-ae2f-b71a77d0d232">
-          <!-- Form Inputs. Each input must have a name="" attribute -->
-          <div class="mb-4">
-            <label for="name" class="block text-gray-500"><strong>Full name</strong> (required)</label>
-            <input type="text" name="Full name" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
-          </div>
-          <div class="mb-4">
-            <label for="email" class="block text-gray-500"><strong>Email</strong> (required)</label>
-            <input type="email" name="Email" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
-          </div>
-          <div class="mb-4">
-            <label for="message" class="block text-gray-500"><strong>Tell me a little bit about yourself and what you're seeking from therapy</strong> (required)</label>
-            <textarea name="Message" required class="h-48 w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
-          </div>
-          <!-- Honeypot Spam Protection -->
-          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-          <!-- Custom Confirmation / Success Page -->
-          <input type="hidden" name="redirect" value="https://web3forms.com/success">
-          <button type="submit" class="w-full text-white py-3 rounded-lg font-bold" style="background-color: #7b9d86;">Send message</button>
-        </form>
-      </div>
-    </section>
+<form action="https://api.web3forms.com/submit" method="POST" class="max-w-3xl bg-white shadow-md rounded-lg p-8">
+  <input type="hidden" name="access_key" value="ce3d1bec-322b-4cdf-ae2f-b71a77d0d232">
+  <!-- Form Inputs. Each input must have a name="" attribute -->
+  <div class="mb-4">
+    <label for="name" class="block text-gray-500"><strong>Full name</strong> (required)</label>
+    <input type="text" name="Full name" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+  </div>
+  <div class="mb-4">
+    <label for="email" class="block text-gray-500"><strong>Email</strong> (required)</label>
+    <input type="email" name="Email" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+  </div>
+  <div class="mb-4">
+    <label for="message" class="block text-gray-500"><strong>Message</strong> (required)</label>
+    <textarea name="Message" required class="h-48 w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+  </div>
+  <!-- Honeypot Spam Protection -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+  <!-- Custom Confirmation / Success Page -->
+  <input type="hidden" name="redirect" value="https://web3forms.com/success">
+  <button type="submit" class="w-full text-white py-3 rounded-lg font-bold" style="background-color: #7b9d86;"
+          onmouseover="this.style.backgroundColor='#476f54'"
+          onmouseout="this.style.backgroundColor='#7b9d86'">Send message</button>
+</form>
+</div>
+</section>
 
     <footer class="text-black py-4 text-center text-gray-500" style="background-color: #f9e7c2;" >
       <img src="img/nip.png" alt="Therapist" class="mx-auto w-48 my-8">
