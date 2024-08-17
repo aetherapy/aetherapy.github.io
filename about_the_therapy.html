@@ -17,30 +17,29 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <style>
       .hero {
-      background-color: rgba(123, 157, 134, 1.0); /* 50% opacity on mobile */
+          background-color: rgba(123, 157, 134, 1.0); /* 50% opacity on mobile */
       }
       @media (max-width: 800px) {
-      .hero {
-      background-color: rgba(123, 157, 134, 0.8); /* 100% opacity otherwise */
-      font-size: 20px;
+          .hero {
+          background-color: rgba(123, 157, 134, 0.8); /* 100% opacity otherwise */
+          font-size: 20px;
+          }
       }
+      .hero-section {
+          position: relative;
+          text-align: center;
+          color: white;
+          height: 600px;
+          background-image:n url('img/trees2.avif');
+          background-size: cover;
+          background-position: center;
+          background-color: #fff3d5;
       }
-    .hero-section {
-      position: relative;
-      text-align: center;
-      color: white;
-      height: 600px;
-      background-image: url('img/trees2.avif');
-      background-size: cover;
-      background-position: center;
-      background-color: #fff3d5;
-    }
-    .overlay {
-      background-color: rgba(198, 193, 171, 0.1);
-      height: 100%;
-      width: 100%;
-    }
-
+      .overlay {
+          background-color: rgba(198, 193, 171, 0.1);
+          height: 100%;
+          width: 100%;
+      }
     </style>
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -85,7 +84,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="mt-36 xl:mt-96 py-24 text-lg lg:text-xl font-light" style="background-color: #fff3d5;">
+    <section class="mt-36 xl:mt-96 py-24 font-light text-lg lg:text-xl" style="background-color: #fff3d5;">
       <div class="container mx-auto px-4 max-w-3xl">
         <h2 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">My approach</h1>
         <p>
@@ -94,7 +93,7 @@
           entering a bubble where you can let anything go and receive the
           support you need.
         </p>
-        <p class="mt-4">
+        <p>
           I am genuinely interested in knowing who you are
           and what you have experienced in life. Since each person is unique,
           the therapy I offer is always tailored to you and your specific
@@ -111,7 +110,7 @@
     <section class="py-24 text-lg lg:text-xl font-light" style="background-color: #f9e7c2;">
       <div class="container mx-auto px-4 max-w-3xl">
       <h2 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">For whom</h1>
-        <p>
+        <p class="text-lg lg:text-xl">
           If you are encountering some difficulties or are interested in
           getting to know yourself better and growing, you are in the right
           place. I specialize in handling <strong>anxiety, low moods, feelings
