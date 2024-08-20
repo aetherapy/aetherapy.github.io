@@ -15,6 +15,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    <style>
+      .hero {
+      background-color: rgba(123, 157, 134, 1.0); /* 50% opacity on mobile */
+      }
+      @media (max-width: 800px) {
+      .hero {
+      background-color: rgba(123, 157, 134, 0); /* 100% opacity otherwise */
+      }
+      }
+    </style>
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -51,11 +61,27 @@
       </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="text-white" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
+      <div class="w-full xl:py-20" style="background-color: rgba(255, 252, 228, 0.22); ">
+        <div class="text-center px-8 py-20 xl:p-20  mx-auto max-w-3xl hero" >
+          <h1 class="text-3xl lg:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+          <p class="text-md lg:text-xl">Currently no waiting time</p>
+          <p class="text-sm lg:text-md">(updated on 10/08/2024)</p>
+
+          <a href="#contact" class="mt-8 inline-block bg-transparent
+                                    text-white-600 px-6 py-3 rounded-lg border-white border"
+             style="background-color: #7b9d86"
+             onmouseover="this.style.backgroundColor='#476f54'"
+             onmouseout="this.style.backgroundColor='#7b9d86'">Book a session</a>
+        </div>
+      </div>
+    </section>
+
 
     <!-- About Section -->
     <section class="pb-12 pt-8 font-light text-lg lg:text-xl" style="background-color: #f9e7c2;">
       <div class="container mx-auto px-4 max-w-3xl">
-        <img src="img/profile10.png" alt="Therapist" class="mx-auto p-4 xl:p-36">
         <h1 class="text-4xl lg:text-5xl mb-4 mt-8" style="font-family: 'Sorts Mill Goudy', serif;">Agathe Eiselé</h1>
         <p class="max-w-3xl mx-auto mb-8">
           I was born In France. I have studied both in Switzerland and in the
@@ -65,12 +91,15 @@
           just in case.
         </p>
 
-        <p class="max-w-3xl mx-auto">
+        <p class="max-w-3xl mx-auto mb-16">
           I am a sensitive person who is very attuned to people. Being a good listener
           and passionate about psychology, I naturally became a therapist. Providing
           mental support and guidance gives meaning to my life and I highly value the
           trust that people put in me.
         </p>
+        <img src="img/profile10.png" alt="Therapist" class="mx-auto p-4 xl:p-36">
+
+
       </div>
     </section>
 
