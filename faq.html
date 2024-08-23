@@ -15,10 +15,21 @@
       .hero {
       background-color: rgba(123, 157, 134, 1.0); /* 50% opacity on mobile */
       }
-      @media (max-width: 800px) {
-      .hero {
-      background-color: rgba(123, 157, 134, 0); /* 100% opacity otherwise */
+      nav {
+      background-color: #f4f3f1;
       }
+      @media (max-width: 1280px) {
+      .hero {
+      background-color: rgba(0, 0, 0, 0);
+      }
+      nav {
+      background-color: #fff3d5;
+      }
+      }
+      #faq_insurance ul li::marker {
+      content:"·  ";
+      font-size: 1.3em;
+      vertical-align:middle;
       }
     </style>
     <script type="text/javascript">
@@ -33,7 +44,7 @@
 
   <body class="bg-gray-100 text-gray-800" style="font-family: 'Montserrat', sans-serif;">
     <!-- Navigation -->
-    <nav style="background-color: #f9e7c2;">
+    <nav>
       <div class="container mx-auto px-4 py-2 flex justify-between items-baseline">
         <a id="website-name" href="/" class="text-3xl xl:text-5xl font-light mt-4 mb-2" style="color: #488f79; font-family: 'Sorts Mill Goudy', sans-serif;">AE Therapy</a>
         <button id="menu-toggle" aria-label="menu toggle" class="text-gray-700 hover:text-green-600 xl:hidden">
@@ -57,13 +68,26 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="text-white" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
+    <!-- Hero Section that changes bg depending on width -->
+    <section class="text-white xl:py-20 hidden xl:block xl:visible" style="background-image: url('img/flowers.webp'); background-size: cover; background-position: center;">
+      <div class="text-center px-8 py-20 xl:p-20 mx-auto max-w-3xl hero" >
+        <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+        <p class="text-md xl:text-xl">Currently no waiting time</p>
+        <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
+
+        <a href="#contact" class="mt-8 inline-block bg-transparent
+                                  text-white-600 px-6 py-3 rounded-lg border-white border"
+           onmouseover="this.style.backgroundColor='#476f54'"
+           onmouseout="this.style.backgroundColor='#7b9d86'">Book a session</a>
+      </div>
+    </section>
+
+    <section class="text-white xl:hidden" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
       <div class="w-full xl:py-20" style="background-color: rgba(255, 252, 228, 0.22); ">
         <div class="text-center px-8 py-20 xl:p-20  mx-auto max-w-3xl hero" >
-          <h1 class="text-3xl lg:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
-          <p class="text-md lg:text-xl">Currently no waiting time</p>
-          <p class="text-sm lg:text-md">(updated on 10/08/2024)</p>
+          <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+          <p class="text-md xl:text-xl">Currently no waiting time</p>
+          <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
 
           <a href="#contact" class="mt-8 inline-block bg-transparent
                                     text-white-600 px-6 py-3 rounded-lg border-white border"
@@ -79,7 +103,7 @@
       <div class="text-left basis-1/2 py-16 px-8 max-w-5xl mx-auto">
         <p class="sm:text-4xl text-3xl font-extrabold text-base-content" style="font-family: 'Sorts Mill Goudy', serif;">Rates</p>
         <p class="sm:text-5xl text-4xl font-normal text-base-content pt-4" style="font-family: 'Sorts Mill Goudy', serif;">90 euros / 1 hour</p>
-        <p class="sm:text-lg text-lg text-base-content" style="font-family: 'Sorts Mill Goudy', serif;">price can be adapted depending on your income</p>
+        <p class="sm:text-lg text-lg text-base-content" style="font-family: 'Sorts Mill Goudy', serif;">Price can be adapted depending on your income</p>
       </div>
     </section>
 
@@ -116,7 +140,7 @@
             </button>
             <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
               <div class="pb-5 leading-relaxed">
-                <div class="space-y-2 leading-relaxed">I offer therapy in <u>English</u> and <u>French</u>.</div>
+                <div class="space-y-2 leading-relaxed">I offer therapy in <b>English</b> and <b>French</b>.</div>
               </div>
             </div>
           </li>
@@ -131,7 +155,9 @@
             </button>
             <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
               <div class="pb-5 leading-relaxed">
-                <div class="space-y-2 leading-relaxed">Sessions can take place <u>online</u> or in the <u>city center of Utrecht.</u> More details regarding the exact location will follow.</div>
+                <div class="space-y-2 leading-relaxed">Sessions can take
+                place <b>online</b> or in the <b>city center of Utrecht.</b>
+                More details regarding the exact location will follow.</div>
               </div>
             </div>
           </li>
@@ -146,7 +172,12 @@
             </button>
             <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
               <div class="pb-5 leading-relaxed">
-                <div class="space-y-2 leading-relaxed">The aim of this call is to get to know each other and for us to see if there is a click and you feel comfortable talking to me. I answer any of your questions and assess the range and severity of your complaints to estimate if I can provide the help you need.</div>
+                <div class="space-y-2 leading-relaxed">During this call, we get
+                  to know each other and I ask about the reasons that led you
+                  to seek out therapy. The aim is to detemine the range and
+                  severity of your complaints and estimate if I can provide
+                  help.
+                </div>
               </div>
             </div>
           </li>
@@ -161,7 +192,11 @@
             </button>
             <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
               <div class="pb-5 leading-relaxed">
-                <div class="space-y-2 leading-relaxed">I usually see clients <u>every week</u> or <u>every other week</u>. However, the frequency of sessions is quite <u>flexible</u> and can be adapted depending on the severity of the complaints and preferences.</div>
+                <div class="space-y-2 leading-relaxed">I usually see
+                clients <b>every week</b> or <b>every other week</b>. However,
+                the frequency of sessions is quite <b>flexible</b> and can be
+                adapted depending on the severity of the complaints and
+                preferences.</div>
               </div>
             </div>
           </li>
@@ -176,7 +211,12 @@
             </button>
             <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
               <div class="pb-5 leading-relaxed">
-                <div class="space-y-2 leading-relaxed">The therapy is tailored to each patient. What works for one person may not work for another. I use mostly techniques derived from <u>Cognitive Behavioural Therapy</u> (CBT), <u>Acceptance and Commitment Therapy</u> (ACT), <u>Schema Therapy</u>, <u>Attachment-based techniques</u>, and <u>Mindfulness.</u></div>
+                <div class="space-y-2 leading-relaxed">The therapy is tailored
+                to each patient. What works for one person may not work for
+                another. I use mostly techniques derived from <b>Cognitive
+                Behavioural Therapy</b> (CBT), <b>Acceptance and Commitment
+                Therapy</b> (ACT), <b>Schema Therapy</b>, and <b>Attachment
+                theory</b>.</div>
               </div>
             </div>
           </li>
@@ -191,7 +231,10 @@
             </button>
             <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
               <div class="pb-5 leading-relaxed">
-                <div class="space-y-2 leading-relaxed">The first call is free. The standard price for a <u>1-hour</u> session is <u>€90</u>. A discounted rate can be applied for clients with lower income.</div>
+                <div class="space-y-2 leading-relaxed">The first call is free.
+                The standard price for a <b>1-hour</b> session is <b>€90</b>. A
+                discounted rate can be applied for clients with lower
+                income.</div>
               </div>
             </div>
           </li>
@@ -206,7 +249,7 @@
             </button>
             <div id="faq_insurance" class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
               <div class="pb-5 leading-relaxed">
-                <div class="space-y-2 leading-relaxed">Unfortunately, I am currently not working with insurance. There are some advantages to that:
+                <div class="space-y-2 leading-relaxed">I am currently not working with insurance companies. There are some advantages to that:
                   <ul class="italic list-inside mb-12 list-disc pl-4 symptoms">
                     <li class="list-item">There is more freedom regarding the approach chosen and I can offer more specialized treatment</li>
                     <li class="list-item">There is no limited number of sessions. If needed, we can go in-depth and target longer-term goals</li>
@@ -229,16 +272,16 @@
               <div class="pb-5 leading-relaxed">
                 <div class="space-y-2 leading-relaxed">If you want to cancel or
                   reschedule an appointment contact me via <a class="underline"
-                                                              href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>.
-                  I gently ask you to inform me <u>24 hours</u> before the planned
-                  appointment.</div>
-              </div>
+                  href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>.
+                  I gently ask you to inform me <b>24 hours</b> before the
+                  planned appointment.</div>
+              </di>
             </div>
           </li>
 
           <li>
             <button class="relative flex gap-2 items-center w-full py-5 text-base text-left border-t md:text-lg border-base-content border-black" aria-expanded="false" onclick="toggleFAQ(this)">
-              <span class="flex-1 text-base-content">Crisis: What shall I do in case of severe suicidality?</span>
+              <span class="flex-1 text-base-content"><strong>Crisis:</strong> What should I do if I am having severe suicidal thoughts?</span>
               <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <rect y="7" width="16" height="1" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
                 <rect y="7" width="16" height="1" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
@@ -246,8 +289,12 @@
             </button>
             <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
               <div class="pb-5 leading-relaxed">
-                <div class="space-y-2 leading-relaxed">Is your life in immediate danger? <u>Call 112 immediately</u>.<br>
-                  If your life is not in immediate danger but you could still use help, call the free suicide prevention line 0800-0113 or start an online chat with someone at <a class="underline" href="https://www.113.nl/chatten">113.nl/chatten</a>.
+                <div class="space-y-2 leading-relaxed">Is your life in
+                  immediate danger? <b>Call 112 immediately</b>.<br> If your
+                  life is not in immediate danger but you could still use help,
+                  call the free suicide prevention line 0800-0113 or start an
+                  online chat with someone at <a class="underline"
+                  href="https://www.113.nl/chatten">113.nl/chatten</a>.
                 </div>
               </div>
             </div>
@@ -255,7 +302,7 @@
 
           <li>
             <button class="relative flex gap-2 items-center w-full py-5 text-base text-left border-t md:text-lg border-base-content border-black" aria-expanded="false" onclick="toggleFAQ(this)">
-              <span class="flex-1 text-base-content">Crisis: What shall I do if I am having a panic attack right now?</span>
+              <span class="flex-1 text-base-content"><strong>Crisis:</strong> What should I do if I am having a panic attack right now?</span>
               <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <rect y="7" width="16" height="1" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
                 <rect y="7" width="16" height="1" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
@@ -263,12 +310,16 @@
             </button>
             <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
               <div class="pb-5 leading-relaxed">
-                <div class="space-y-2 leading-relaxed">What you are feeling is scary but is not life-threatening. It is only a temporary state. Watch this video to get reassurance and guidance on what to do if you are in the middle of a panic attack.
-                  <iframe class="w-full h-96" src="https://www.youtube.com/embed/2CQpyA485wc"></iframe>
+                <div class="space-y-2 leading-relaxed">What you are feeling is
+                scary but is not life-threatening. It is only a temporary
+                state. Watch this video to get reassurance and guidance on what
+                to do if you are in the middle of a panic attack.
+                  <iframe class="mt-8 w-full h-96" src="https://www.youtube.com/embed/2CQpyA485wc"></iframe>
                 </div>
               </div>
             </div>
           </li>
+
         </ul>
 
       </div>

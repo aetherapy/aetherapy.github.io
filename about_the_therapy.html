@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description" content="Explore therapy services with AE Therapy for
-      internationals. Online or in Utrecht with Agathe Eisele. Contact us to
-      schedule a free 30-minute consultation.">
+                                  internationals. Online or in Utrecht with Agathe Eisele. Contact us to
+                                  schedule a free 30-minute consultation.">
     <title>About the therapy - AE Therapy for internationals</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
@@ -19,17 +19,28 @@
       .hero {
       background-color: rgba(123, 157, 134, 1.0); /* 50% opacity on mobile */
       }
-      @media (max-width: 800px) {
-      .hero {
-      background-color: rgba(123, 157, 134, 0); /* 100% opacity otherwise */
+      nav {
+      background-color: #f4f3f1;
       }
+      @media (max-width: 1280px) {
+      .hero {
+      background-color: rgba(0, 0, 0, 0);
+      }
+      nav {
+      background-color: #fff3d5;
+      }
+      }
+      ul li::marker {
+      content:"·  ";
+      font-size: 1.3em;
+      vertical-align:middle;
       }
     </style>
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "nn6vxme5xp");
     </script>
   </head>
@@ -37,7 +48,7 @@
 
   <body class="bg-gray-100 text-gray-800" style="font-family: 'Montserrat', sans-serif; background-color: #fff3d5;">
     <!-- Navigation -->
-    <nav class="" style="background-color: #fff3d5; position: relative; z-index: 10;">
+    <nav>
       <div class="container mx-auto px-4 py-2 flex justify-between items-baseline">
         <a id="website-name" href="/" class="text-3xl xl:text-5xl font-light mt-4 mb-2" style="color: #488f79; font-family: 'Sorts Mill Goudy', sans-serif;">AE Therapy</a>
         <button id="menu-toggle" aria-label="menu toggle" class="text-gray-700 hover:text-green-600 xl:hidden">
@@ -61,13 +72,26 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="text-white" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
+    <!-- Hero Section that changes bg depending on width -->
+    <section class="text-white xl:py-20 hidden xl:block xl:visible" style="background-image: url('img/flowers.webp'); background-size: cover; background-position: center;">
+      <div class="text-center px-8 py-20 xl:p-20 mx-auto max-w-3xl hero" >
+        <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+        <p class="text-md xl:text-xl">Currently no waiting time</p>
+        <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
+
+        <a href="#contact" class="mt-8 inline-block bg-transparent
+                                  text-white-600 px-6 py-3 rounded-lg border-white border"
+           onmouseover="this.style.backgroundColor='#476f54'"
+           onmouseout="this.style.backgroundColor='#7b9d86'">Book a session</a>
+      </div>
+    </section>
+
+    <section class="text-white xl:hidden" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
       <div class="w-full xl:py-20" style="background-color: rgba(255, 252, 228, 0.22); ">
         <div class="text-center px-8 py-20 xl:p-20  mx-auto max-w-3xl hero" >
-          <h1 class="text-3xl lg:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
-          <p class="text-md lg:text-xl">Currently no waiting time</p>
-          <p class="text-sm lg:text-md">(updated on 10/08/2024)</p>
+          <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+          <p class="text-md xl:text-xl">Currently no waiting time</p>
+          <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
 
           <a href="#contact" class="mt-8 inline-block bg-transparent
                                     text-white-600 px-6 py-3 rounded-lg border-white border"
@@ -78,97 +102,113 @@
       </div>
     </section>
 
+
     <!-- About Section -->
     <section class="py-24 font-light text-lg lg:text-xl" style="background-color: #fff3d5;">
       <div class="container mx-auto px-4 max-w-3xl">
-        <h2 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">My approach</h1>
+        <h2 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">My approach</h2>
         <p>
           As a psychologist, my priority is to create a safe place where you
           feel heard, understood, and comfortable. Entering a session is like
           entering a bubble where you can let anything go and receive the
-          support you need.
+          support and guidance you need.
         </p>
         <p>
-          I am genuinely interested in knowing who you are
-          and what you have experienced in life. Since each person is unique,
-          the therapy I offer is always tailored to you and your specific
-          needs. From the very beginning of the therapy process, we set your
-          personal goals, and together, we work towards achieving those goals.
-          The main techniques I use for that purpose are <strong>Cognitive Behavioral
-          therapy</strong> (CBT), <strong>Schema therapy</strong>, <strong>Acceptance and Commitment
-          therapy</strong> (ACT), and <strong>Mindfulness</strong>.
+          I am genuinely interested in knowing who you are and what you have
+          experienced in life. Since each person is unique, the therapy I offer
+          is always tailored to you and your specific needs. From the very
+          beginning of the therapy process, we set your personal goals, and
+          together, we work towards achieving those goals.
+
+          The main techniques I use for that purpose are derived
+          from <strong>Cognitive Behavioral therapy</strong>
+          (CBT), <strong>Schema therapy</strong>, <strong>Acceptance and
+          Commitment therapy</strong> (ACT), and <strong>Attachment
+          theory</strong>.
         </p>
-        <img src="img/hands.jpg" alt="Therapy session" class="mt-16 object-cover rounded-full">
+        <section class="mx-auto w-md object-cover rounded-full mt-24" style="background-image: url('img/hands.jpg'); background-size: cover; background-position: center;">
+          <div class="w-full h-48 xl:h-96 object-cover rounded-full" style="background-color: rgba(255, 217, 147, 0.37); ">
+          </div>
+        </section>
       </div>
     </section>
 
     <section class="py-24 text-lg lg:text-xl font-light" style="background-color: #f9e7c2;">
       <div class="container mx-auto px-4 max-w-3xl">
-      <h2 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">For whom</h1>
+        <h2 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">For whom</h2>
         <p class="text-lg lg:text-xl">
           If you are encountering some difficulties or are interested in
           getting to know yourself better and growing, you are in the right
-          place. I specialize in handling <strong>anxiety, low moods, feelings
-          of emptiness, traumas, sleeping problems, interpersonal difficulties,
-          complex family dynamics, anger issues, and self-esteem
-          issues</strong>. As an expat myself, I also like to offer counseling
-          on problems related to <strong>living abroad.</strong> These can
-          include struggles with cultural differences, learning languages,
-          homesickness, feeling lonely, etc.
+          place. I handle mild to moderate psychological complaints. I can help you work through:
+        </p>
+        <ul class="text-lg lg:text-xl list-outside ml-4 mb-12 list-disc pl-4 symptoms leading-6 mt-4">
+          <li class="list-item mb-2">Anxiety including panic attacks</li>
+          <li class="list-item mb-2">Excessive stress</li>
+          <li class="list-item mb-2">Depressive moods, low energy, and problems with concentration</li>
+          <li class="list-item mb-2">Unhappiness, emptiness, and feelings of guilt</li>
+          <li class="list-item mb-2">Traumas and aversive events from childhood</li>
+          <li class="list-item mb-2">Sleeping problems such as insomnia and nightmares</li>
+          <li class="list-item mb-2">Interpersonal issues, complex family dynamics, irritability, difficulties with connecting with people and setting boundaries</li>
+          <li class="list-item mb-2">Self-esteem issues, lack of confidence, difficulty reaching goals</li>
+        </ul>
+
+        <p>
+          As an expat myself, I also like to offer counseling on problems
+          related to living abroad. These can include struggles with cultural
+          differences, learning languages, homesickness, loneliness, etc.
         </p>
 
-
-        <h2 class="text-4xl lg:text-5xl mb-4 mt-16" style="font-family: 'Sorts Mill Goudy', serif;">Procedure</h1>
+        <h2 class="text-4xl lg:text-5xl mb-4 mt-16" style="font-family: 'Sorts Mill Goudy', serif;">Procedure</h2>
         <p>
-          The first meeting is free. During this 30-minute call, we get to know
-          each other. If you feel that there is a click and I estimate that I
-          can provide help, then we go further. We can plan right away the next
-          session and the therapy process starts. The price of a 60-minute
-          session is 90 euros and includes all administrative costs. Because I
-          want to promote more inclusive and equitable mental health, the costs
-          can be adapted depending on your income.
+          The first meeting is free. During this 30-minute call, I answer your
+          questions and assess the range and severity of your complaints. If I
+          estimate that I can provide help, then we go further. We can plan
+          right away the next session and the therapy process starts. The price
+          of a 60-minute session is 90 euros and includes all administrative
+          costs. Because I want to promote more inclusive and equitable mental
+          health, the costs can be adapted depending on your income.
         </p>
       </div>
     </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-20" style="background-color: #fff3d5;">
-  <div class="container mx-auto max-w-3xl px-4">
-    <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Contact</h1>
-    <h2 class="text-2xl lg:text-3xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Schedule a free initial 30-minute appointment</h1>
-<p class="text-lg font-light mb-8">
-  Reach me by email at
-  <a class="underline"
-     href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>
-  or via the contact form below. Tell me a little bit about yourself
-  and the reasons that led you to contact me.
-</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20" style="background-color: #fff3d5;">
+      <div class="container mx-auto max-w-3xl px-4">
+        <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Contact</h1>
+        <h2 class="text-2xl lg:text-3xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Schedule a free initial 30-minute appointment</h2>
+        <p class="text-lg font-light mb-8">
+          Reach me by email at
+          <a class="underline"
+             href="mailto:ae.therapy.utrecht@gmail.com">ae.therapy.utrecht@gmail.com</a>
+          or via the contact form below. Tell me a little bit about yourself
+          and the reasons that led you to contact me.
+        </p>
 
-<form action="https://api.web3forms.com/submit" method="POST" class="max-w-3xl bg-white shadow-md rounded-lg p-8">
-  <input type="hidden" name="access_key" value="ce3d1bec-322b-4cdf-ae2f-b71a77d0d232">
-  <!-- Form Inputs. Each input must have a name="" attribute -->
-  <div class="mb-4">
-    <label for="name" class="block text-gray-500"><strong>Full name</strong> (required)</label>
-    <input type="text" name="Full name" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
-  </div>
-  <div class="mb-4">
-    <label for="email" class="block text-gray-500"><strong>Email</strong> (required)</label>
-    <input type="email" name="Email" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
-  </div>
-  <div class="mb-4">
-    <label for="message" class="block text-gray-500"><strong>Message</strong> (required)</label>
-    <textarea name="Message" required class="h-48 w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
-  </div>
-  <!-- Honeypot Spam Protection -->
-  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-  <!-- Custom Confirmation / Success Page -->
-  <input type="hidden" name="redirect" value="https://aetherapy.nl/success">
-  <button type="submit" class="w-full text-white py-3 rounded-lg font-bold" style="background-color: #7b9d86;"
-          onmouseover="this.style.backgroundColor='#476f54'"
-          onmouseout="this.style.backgroundColor='#7b9d86'">Send message</button>
-</form>
-</div>
-</section>
+        <form action="https://api.web3forms.com/submit" method="POST" class="max-w-3xl bg-white shadow-md rounded-lg p-8">
+          <input type="hidden" name="access_key" value="ce3d1bec-322b-4cdf-ae2f-b71a77d0d232">
+          <!-- Form Inputs. Each input must have a name="" attribute -->
+          <div class="mb-4">
+            <label for="name" class="block text-gray-500"><strong>Full name</strong> (required)</label>
+            <input type="text" name="Full name" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-500"><strong>Email</strong> (required)</label>
+            <input type="email" name="Email" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-500"><strong>Message</strong> (required)</label>
+            <textarea name="Message" required class="h-48 w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+          </div>
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <!-- Custom Confirmation / Success Page -->
+          <input type="hidden" name="redirect" value="https://aetherapy.nl/success">
+          <button type="submit" class="w-full text-white py-3 rounded-lg font-bold" style="background-color: #7b9d86;"
+                  onmouseover="this.style.backgroundColor='#476f54'"
+                  onmouseout="this.style.backgroundColor='#7b9d86'">Send message</button>
+        </form>
+      </div>
+    </section>
 
     <footer class="text-black py-4 text-center text-gray-500" style="background-color: #f9e7c2;" >
       <img src="img/nip.png" alt="NIP" class="mx-auto w-48 my-8">
