@@ -15,27 +15,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <style>
-      .hero {
-      background-color: rgba(123, 157, 134, 1.0); /* 50% opacity on mobile */
-      }
-      nav {
-      background-color: #f4f3f1;
-      }
-      @media (max-width: 1280px) {
-      .hero {
-      background-color: rgba(0, 0, 0, 0);
-      }
-      nav {
-      background-color: #fff3d5;
-      }
-      }
-      ul li::marker {
-      content:"·  ";
-      font-size: 1.3em;
-      vertical-align:middle;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -113,7 +93,7 @@
           entering a bubble where you can let anything go and receive the
           support and guidance you need.
         </p>
-        <p>
+        <p class="mt-8">
           I am genuinely interested in knowing who you are and what you have
           experienced in life. Since each person is unique, the therapy I offer
           is always tailored to you and your specific needs. From the very
@@ -123,9 +103,58 @@
           The main techniques I use for that purpose are derived
           from <strong>Cognitive Behavioral therapy</strong>
           (CBT), <strong>Schema therapy</strong>, <strong>Acceptance and
-          Commitment therapy</strong> (ACT), and <strong>Attachment
-          theory</strong>.
+            Commitment therapy</strong> (ACT), and <strong>Attachment
+            theory</strong>.
         </p>
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 mt-16">
+          <ul class="basis-1/2 list-none">
+            <li>
+              <button class="relative flex gap-2 items-center w-full py-5 text-base text-left border-t md:text-lg border-base-content border-black" aria-expanded="false" onclick="toggleFAQ(this)">
+                <span class="flex-1 text-base-content">What is CBT?</span>
+                <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="7" width="16" height="1" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                  <rect y="7" width="16" height="1" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                </svg>
+              </button>
+              <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                <div class="pb-5 leading-relaxed">
+                  <div class="space-y-2 leading-relaxed">Sessions can take
+                    place <b>online</b> or in the <b>city center of Utrecht.</b>
+                    More details regarding the exact location will follow.</div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <button class="relative flex gap-2 items-center w-full py-5 text-base text-left border-t md:text-lg border-base-content border-black" aria-expanded="false" onclick="toggleFAQ(this)">
+                <span class="flex-1 text-base-content">What is Schema Therapy?</span>
+                <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="7" width="16" height="1" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                  <rect y="7" width="16" height="1" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                </svg>
+              </button>
+              <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                <div class="pb-5 leading-relaxed">
+                  <div class="space-y-2 leading-relaxed">During this call, we get
+                    to know each other and I ask about the reasons that led you
+                    to seek out therapy. The aim is to detemine the range and
+                    severity of your complaints and estimate if I can provide
+                    help.
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <script>
+          function toggleFAQ(button) {
+          const content = button.nextElementSibling;
+          button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
+          content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
+          }
+        </script>
+
+
         <section class="mx-auto w-md object-cover rounded-full mt-24" style="background-image: url('img/hands.jpg'); background-size: cover; background-position: center;">
           <div class="w-full h-48 xl:h-96 object-cover rounded-full" style="background-color: rgba(255, 217, 147, 0.37); ">
           </div>

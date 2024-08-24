@@ -1,0 +1,29 @@
+.hero {
+    background-color: rgba(123, 157, 134, 1.0); /* 50% opacity on mobile */
+}
+
+nav {
+    background-color: #f4f3f1;
+}
+
+@media (max-width: 1280px) {
+    .hero {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    nav {
+        background-color: #fff3d5;
+    }
+}
+
+#about_the_therapy ul li::marker {
+    content: "·  ";
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+#faq_insurance ul li::marker {
+    content: "·  ";
+    font-size: 1.3em;
+    vertical-align: middle;
+}
