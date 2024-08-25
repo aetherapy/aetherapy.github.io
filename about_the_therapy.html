@@ -23,6 +23,30 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "nn6vxme5xp");
     </script>
+    <script>
+      function toggle_menu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+
+      var menu_toggle = document.getElementById('menu-toggle');
+      menu_toggle.classList.toggle('hidden');
+      var menu_close = document.getElementById('menu-close');
+      menu_close.classList.toggle('hidden');
+
+      var website_name = document.getElementById('website-name');
+      website_name.classList.toggle('hidden');
+      };
+
+      document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
+      document.getElementById('menu-close').addEventListener('click', toggle_menu);
+    </script>
+    <script>
+      function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
+      content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
+      }
+    </script>
   </head>
 
 
@@ -53,11 +77,11 @@
     </nav>
 
     <!-- Hero Section that changes bg depending on width -->
-    <section class="text-white xl:py-20 hidden xl:block xl:visible" style="background-image: url('img/flowers.webp'); background-size: cover; background-position: center;">
-      <div class="text-center px-8 py-20 xl:p-20 mx-auto max-w-3xl hero" >
-        <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
-        <p class="text-md xl:text-xl">Currently no waiting time</p>
-        <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
+    <section class="text-white md:py-20 hidden md:block md:visible" style="background-image: url('img/flowers.webp'); background-size: cover; background-position: center;">
+      <div class="text-center px-8 py-20 md:p-20 mx-auto max-w-3xl hero" >
+        <h1 class="text-3xl md:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+        <p class="text-md md:text-xl">Currently no waiting time</p>
+        <p class="text-sm md:text-md">(updated on 10/08/2024)</p>
 
         <a href="#contact" class="mt-8 inline-block bg-transparent
                                   text-white-600 px-6 py-3 rounded-lg border-white border"
@@ -66,12 +90,12 @@
       </div>
     </section>
 
-    <section class="text-white xl:hidden" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
-      <div class="w-full xl:py-20" style="background-color: rgba(255, 252, 228, 0.22); ">
-        <div class="text-center px-8 py-20 xl:p-20  mx-auto max-w-3xl hero" >
-          <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
-          <p class="text-md xl:text-xl">Currently no waiting time</p>
-          <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
+    <section class="text-white md:hidden" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
+      <div class="w-full md:py-20" style="background-color: rgba(255, 252, 228, 0.22); ">
+        <div class="text-center px-8 py-20 md:p-20  mx-auto max-w-3xl hero" >
+          <h1 class="text-3xl md:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+          <p class="text-md md:text-xl">Currently no waiting time</p>
+          <p class="text-sm md:text-md">(updated on 10/08/2024)</p>
 
           <a href="#contact" class="mt-8 inline-block bg-transparent
                                     text-white-600 px-6 py-3 rounded-lg border-white border"
@@ -84,7 +108,7 @@
 
 
     <!-- About Section -->
-    <section class="py-24 font-light text-lg lg:text-xl" style="background-color: #fff3d5;">
+    <section class="py-16 font-light text-lg lg:text-xl" style="background-color: #fff3d5;">
       <div class="container mx-auto px-4 max-w-3xl">
         <h2 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">My approach</h2>
         <p>
@@ -106,11 +130,12 @@
             Commitment therapy</strong> (ACT), and <strong>Attachment
             theory</strong>.
         </p>
+
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 mt-16">
           <ul class="basis-1/2 list-none">
             <li>
               <button class="relative flex gap-2 items-center w-full py-5 text-base text-left border-t md:text-lg border-base-content border-black" aria-expanded="false" onclick="toggleFAQ(this)">
-                <span class="flex-1 text-base-content">What is CBT?</span>
+                <span class="flex-1 text-base-content">What is Cognitive Behavioral Therapy?</span>
                 <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                   <rect y="7" width="16" height="1" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
                   <rect y="7" width="16" height="1" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
@@ -118,9 +143,19 @@
               </button>
               <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
                 <div class="pb-5 leading-relaxed">
-                  <div class="space-y-2 leading-relaxed">Sessions can take
-                    place <b>online</b> or in the <b>city center of Utrecht.</b>
-                    More details regarding the exact location will follow.</div>
+                  <div class="space-y-2 leading-relaxed text-lg">
+                    CBT is a form of psychotherapy that operates on the
+                    principle that our thoughts, feelings, and behaviors are
+                    interconnected. In therapy sessions, we learn to recognize
+                    distorted thinking patterns, challenge these thoughts, and
+                    replace them with more realistic, positive ones, leading to
+                    a decrease in psychological complaints. We also develop
+                    coping strategies and problem-solving skills to deal with
+                    difficult situations. CBT is a structured, goal-oriented,
+                    and typically short-term form of psychotherapy. It is an
+                    effective treatment for a variety of mental health issues,
+                    including depression, anxiety, and PTSD.
+                  </div>
                 </div>
               </div>
             </li>
@@ -135,34 +170,92 @@
               </button>
               <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
                 <div class="pb-5 leading-relaxed">
-                  <div class="space-y-2 leading-relaxed">During this call, we get
-                    to know each other and I ask about the reasons that led you
-                    to seek out therapy. The aim is to detemine the range and
-                    severity of your complaints and estimate if I can provide
-                    help.
+                  <div class="space-y-2 leading-relaxed text-lg">
+                    At the heart of Schema therapy is the concept of "schemas",
+                    which are deep-rooted patterns of thoughts, emotions, and
+                    behaviors that develop in response to unmet core emotional
+                    needs during childhood. These core emotional needs include
+                    things like safety, love, connection, autonomy, and
+                    self-esteem. When these needs are not properly met,
+                    maladaptive schemas develop, leading to unhealthy coping
+                    mechanisms and distress in adulthood. Through Schema
+                    therapy, we learn to identify and understand these schemas,
+                    recognize how they impact our current life, and work to
+                    change the associated thoughts, feelings, and behaviors.
+                    The goal is to meet those core emotional needs in healthier
+                    ways, leading to improved mental health and well-being.
+                    Schema therapy is particularly effective for individuals
+                    with long-lasting emotional and interpersonal difficulties.
+
                   </div>
                 </div>
               </div>
             </li>
+
+            <li>
+              <button class="relative flex gap-2 items-center w-full py-5 text-base text-left border-t md:text-lg border-base-content border-black" aria-expanded="false" onclick="toggleFAQ(this)">
+                <span class="flex-1 text-base-content">What is Acceptance and Commitment Therapy?</span>
+                <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="7" width="16" height="1" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                  <rect y="7" width="16" height="1" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                </svg>
+              </button>
+              <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                <div class="pb-5 leading-relaxed">
+                  <div class="space-y-2 leading-relaxed text-lg">
+                    ACT assumes that psychological suffering is often caused by
+                    trying to control or avoid unpleasant internal experiences,
+                    such as anxiety or sadness. Instead of trying to eliminate
+                    these experiences, ACT teaches us mindfulness and
+                    acceptance strategies to help us observe our thoughts and
+                    feelings without being overwhelmed by them. The therapy
+                    also emphasizes commitment to value-driven actions, guiding
+                    us to take steps toward what truly matters to us, despite
+                    any challenges we may face.
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <button class="relative flex gap-2 items-center w-full py-5 text-base text-left border-t md:text-lg border-base-content border-black" aria-expanded="false" onclick="toggleFAQ(this)">
+                <span class="flex-1 text-base-content">What is Attachment Theory?</span>
+                <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="7" width="16" height="1" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                  <rect y="7" width="16" height="1" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                </svg>
+              </button>
+              <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                <div class="pb-5 leading-relaxed">
+                  <div class="space-y-2 leading-relaxed text-lg">
+                    Attachment theory is based on the idea that early
+                    relationships significantly influence an individual’s
+                    emotional development and how they relate to others
+                    throughout life. Disruptions in early attachments, such as
+                    neglect, abuse, or inconsistent caregiving can lead to
+                    attachment disorders or difficulties in forming secure,
+                    trusting relationships in adulthood. In attachment therapy,
+                    we explore and heal these early attachment wounds and
+                    develop healthier, more secure relationships. This process
+                    often involves building trust, understanding emotions, and
+                    learning new ways to connect with others. The goal is to
+                    foster secure attachment patterns, leading to heightened
+                    emotional well-being and relationship satisfaction.
+                  </div>
+                </div>
+              </div>
+            </li>
+
           </ul>
         </div>
-        <script>
-          function toggleFAQ(button) {
-          const content = button.nextElementSibling;
-          button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
-          content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
-          }
-        </script>
-
-
         <section class="mx-auto w-md object-cover rounded-full mt-24" style="background-image: url('img/hands.jpg'); background-size: cover; background-position: center;">
-          <div class="w-full h-48 xl:h-96 object-cover rounded-full" style="background-color: rgba(255, 217, 147, 0.37); ">
+          <div class="w-full h-48 xl:h-96 object-cover rounded-full" style="background-color: rgba(255, 217, 147, 0.25); ">
           </div>
         </section>
       </div>
     </section>
 
-    <section class="py-24 text-lg lg:text-xl font-light" style="background-color: #f9e7c2;">
+    <section id="for_whom" class="py-24 text-lg lg:text-xl font-light" style="background-color: #f9e7c2;">
       <div class="container mx-auto px-4 max-w-3xl">
         <h2 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">For whom</h2>
         <p class="text-lg lg:text-xl">
@@ -170,7 +263,7 @@
           getting to know yourself better and growing, you are in the right
           place. I handle mild to moderate psychological complaints. I can help you work through:
         </p>
-        <ul class="text-lg lg:text-xl list-outside ml-4 mb-12 list-disc pl-4 symptoms leading-6 mt-4">
+        <ul class="text-lg lg:text-xl list-outside ml-4 mb-12 list-disc pl-4 leading-6 mt-4 font-normal">
           <li class="list-item mb-2">Anxiety including panic attacks</li>
           <li class="list-item mb-2">Excessive stress</li>
           <li class="list-item mb-2">Depressive moods, low energy, and problems with concentration</li>
@@ -182,8 +275,8 @@
         </ul>
 
         <p>
-          As an expat myself, I also like to offer counseling on problems
-          related to living abroad. These can include struggles with cultural
+          As an expat myself, I also like to offer counseling on <strong>problems
+            related to living abroad.</strong> These can include struggles with cultural
           differences, learning languages, homesickness, loneliness, etc.
         </p>
 
@@ -192,11 +285,15 @@
           The first meeting is free. During this 30-minute call, I answer your
           questions and assess the range and severity of your complaints. If I
           estimate that I can provide help, then we go further. We can plan
-          right away the next session and the therapy process starts. The price
-          of a 60-minute session is 90 euros and includes all administrative
-          costs. Because I want to promote more inclusive and equitable mental
-          health, the costs can be adapted depending on your income.
+          right away the next session and the therapy process starts.
         </p>
+        <p class="mt-8">
+          If you have any complaints about the therapy, sharing them with me
+          could help us address the issue and improve our collaboration.
+          Alternatively, you can file a complaint with NIP via
+          this <a class="underline"
+                  href="https://psynip.nl/wp-content/uploads/2022/12/Klachtenformulier-NIP-regeling-blanco-1.docx">form</a>.
+        <p>
       </div>
     </section>
 
@@ -243,23 +340,5 @@
       <img src="img/nip.png" alt="NIP" class="mx-auto w-48 my-8">
       <p>&copy; 2024 Agathe Eisele. All rights reserved.</p>
     </footer>
-
-    <script>
-      function toggle_menu() {
-      var menu = document.getElementById('menu');
-      menu.classList.toggle('hidden');
-
-      var menu_toggle = document.getElementById('menu-toggle');
-      menu_toggle.classList.toggle('hidden');
-      var menu_close = document.getElementById('menu-close');
-      menu_close.classList.toggle('hidden');
-
-      var website_name = document.getElementById('website-name');
-      website_name.classList.toggle('hidden');
-      };
-
-      document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
-      document.getElementById('menu-close').addEventListener('click', toggle_menu);
-    </script>
   </body>
 </html>

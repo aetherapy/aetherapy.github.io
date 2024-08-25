@@ -6,7 +6,7 @@ nav {
     background-color: #f4f3f1;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 760px) {     /* 768 is md */
     .hero {
         background-color: rgba(0, 0, 0, 0);
     }
@@ -16,7 +16,7 @@ nav {
     }
 }
 
-#about_the_therapy ul li::marker {
+#for_whom ul li::marker {
     content: "·  ";
     font-size: 1.3em;
     vertical-align: middle;

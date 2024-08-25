@@ -24,6 +24,30 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "nn6vxme5xp");
     </script>
+    <script>
+      function toggle_menu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+
+      var menu_toggle = document.getElementById('menu-toggle');
+      menu_toggle.classList.toggle('hidden');
+      var menu_close = document.getElementById('menu-close');
+      menu_close.classList.toggle('hidden');
+
+      var website_name = document.getElementById('website-name');
+      website_name.classList.toggle('hidden');
+      };
+
+      document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
+      document.getElementById('menu-close').addEventListener('click', toggle_menu);
+    </script>
+    <script>
+      function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
+      content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
+      }
+    </script>
   </head>
 
 
@@ -55,11 +79,11 @@
 
 
     <!-- Hero Section that changes bg depending on width -->
-    <section class="text-white xl:py-20 hidden xl:block xl:visible" style="background-image: url('img/flowers.webp'); background-size: cover; background-position: center;">
-      <div class="text-center px-8 py-20 xl:p-20 mx-auto max-w-3xl hero" >
-        <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
-        <p class="text-md xl:text-xl">Currently no waiting time</p>
-        <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
+    <section class="text-white md:py-20 hidden md:block md:visible" style="background-image: url('img/flowers.webp'); background-size: cover; background-position: center;">
+      <div class="text-center px-8 py-20 md:p-20 mx-auto max-w-3xl hero" >
+        <h1 class="text-3xl md:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+        <p class="text-md md:text-xl">Currently no waiting time</p>
+        <p class="text-sm md:text-md">(updated on 10/08/2024)</p>
 
         <a href="#contact" class="mt-8 inline-block bg-transparent
                                   text-white-600 px-6 py-3 rounded-lg border-white border"
@@ -68,12 +92,12 @@
       </div>
     </section>
 
-    <section class="text-white xl:hidden" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
-      <div class="w-full xl:py-20" style="background-color: rgba(255, 252, 228, 0.22); ">
-        <div class="text-center px-8 py-20 xl:p-20  mx-auto max-w-3xl hero" >
-          <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
-          <p class="text-md xl:text-xl">Currently no waiting time</p>
-          <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
+    <section class="text-white md:hidden" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
+      <div class="w-full md:py-20" style="background-color: rgba(255, 252, 228, 0.22); ">
+        <div class="text-center px-8 py-20 md:p-20  mx-auto max-w-3xl hero" >
+          <h1 class="text-3xl md:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+          <p class="text-md md:text-xl">Currently no waiting time</p>
+          <p class="text-sm md:text-md">(updated on 10/08/2024)</p>
 
           <a href="#contact" class="mt-8 inline-block bg-transparent
                                     text-white-600 px-6 py-3 rounded-lg border-white border"
@@ -108,19 +132,19 @@
 
 
     <!-- About Therapy -->
-    <section id="about_the_therapy" class="py-16" style="background-color: #f9e7c2;">
+    <section id="for_whom" class="py-16" style="background-color: #f9e7c2;">
       <div class="px-4 mx-auto max-w-3xl">
         <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">About the therapy</h1>
         <p class="text-lg lg:text-xl font-light mb-12">
           Through the psychotherapy process, we explore our feelings and
           behaviors to gain valuable insight into ourselves. With better
-          understanding, we get more agency over our lives and can create a
+          understanding, we get more control over our lives and can create a
           unique environment that suits us. We either remove or learn how to
           handle stressors and obstacles, freeing the path to reaching our
           goals.
         </p>
         <p class="text-lg lg:text-xl font-light mb-4">I can help you work through:</p>
-        <ul class="text-lg lg:text-xl list-outside ml-4 mb-12 list-disc pl-4 symptoms leading-6">
+        <ul class="text-lg lg:text-xl list-outside ml-4 mb-12 list-disc pl-4 leading-6">
           <li class="list-item mb-2">Anxiety including panic attacks</li>
           <li class="list-item mb-2">Excessive stress</li>
           <li class="list-item mb-2">Depressive moods, low energy, and problems with concentration</li>
@@ -152,7 +176,7 @@
               <div class="pb-5 leading-relaxed">
                 <div class="space-y-2 leading-relaxed">Sessions can take
                 place <b>online</b> or in the <b>city center of Utrecht.</b>
-                More details regarding the exact location will follow.</div>
+                </div>
               </div>
             </div>
           </li>
@@ -317,13 +341,6 @@
         </ul>
       </div>
     </section>
-    <script>
-      function toggleFAQ(button) {
-      const content = button.nextElementSibling;
-      button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
-      content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
-      }
-    </script>
 
     <div class="pb-16" style="background-color: #f9e7c2;">
       <p class="text-center block mx-auto italic mb-1">Do you have more questions?</p>
@@ -376,22 +393,5 @@
   <p>&copy; 2024 Agathe Eisele. All rights reserved.</p>
 </footer>
 
-<script>
-  function toggle_menu() {
-  var menu = document.getElementById('menu');
-  menu.classList.toggle('hidden');
-
-  var menu_toggle = document.getElementById('menu-toggle');
-  menu_toggle.classList.toggle('hidden');
-  var menu_close = document.getElementById('menu-close');
-  menu_close.classList.toggle('hidden');
-
-  var website_name = document.getElementById('website-name');
-  website_name.classList.toggle('hidden');
-  };
-
-  document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
-  document.getElementById('menu-close').addEventListener('click', toggle_menu);
-</script>
 </body>
 </html>

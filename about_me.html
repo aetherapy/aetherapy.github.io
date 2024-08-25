@@ -23,10 +23,34 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "nn6vxme5xp");
     </script>
+    <script>
+      function toggle_menu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+
+      var menu_toggle = document.getElementById('menu-toggle');
+      menu_toggle.classList.toggle('hidden');
+      var menu_close = document.getElementById('menu-close');
+      menu_close.classList.toggle('hidden');
+
+      var website_name = document.getElementById('website-name');
+      website_name.classList.toggle('hidden');
+      };
+
+      document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
+      document.getElementById('menu-close').addEventListener('click', toggle_menu);
+    </script>
+    <script>
+      function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
+      content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
+      }
+    </script>
   </head>
 
 
-  <body class="bg-gray-100 text-gray-800" style="font-family: 'Montserrat', sans-serif;">
+  <body class="bg-gray-100 text-gray-800" style="font-family: 'Montserrat', sans-serif; background-color: #fff3d5;">
     <!-- Navigation -->
     <nav>
       <div class="container mx-auto px-4 py-2 flex justify-between items-baseline">
@@ -53,11 +77,11 @@
     </nav>
 
     <!-- Hero Section that changes bg depending on width -->
-    <section class="text-white xl:py-20 hidden xl:block xl:visible" style="background-image: url('img/flowers.webp'); background-size: cover; background-position: center;">
-      <div class="text-center px-8 py-20 xl:p-20 mx-auto max-w-3xl hero" >
-        <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
-        <p class="text-md xl:text-xl">Currently no waiting time</p>
-        <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
+    <section class="text-white md:py-20 hidden md:block md:visible" style="background-image: url('img/flowers.webp'); background-size: cover; background-position: center;">
+      <div class="text-center px-8 py-20 md:p-20 mx-auto max-w-3xl hero" >
+        <h1 class="text-3xl md:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+        <p class="text-md md:text-xl">Currently no waiting time</p>
+        <p class="text-sm md:text-md">(updated on 10/08/2024)</p>
 
         <a href="#contact" class="mt-8 inline-block bg-transparent
                                   text-white-600 px-6 py-3 rounded-lg border-white border"
@@ -66,12 +90,12 @@
       </div>
     </section>
 
-    <section class="text-white xl:hidden" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
-      <div class="w-full xl:py-20" style="background-color: rgba(255, 252, 228, 0.22); ">
-        <div class="text-center px-8 py-20 xl:p-20  mx-auto max-w-3xl hero" >
-          <h1 class="text-3xl xl:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
-          <p class="text-md xl:text-xl">Currently no waiting time</p>
-          <p class="text-sm xl:text-md">(updated on 10/08/2024)</p>
+    <section class="text-white md:hidden" style="background-image: url('img/flowers4.webp'); background-size: cover; background-position: center;">
+      <div class="w-full md:py-20" style="background-color: rgba(255, 252, 228, 0.22); ">
+        <div class="text-center px-8 py-20 md:p-20  mx-auto max-w-3xl hero" >
+          <h1 class="text-3xl md:text-6xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Individual therapy in Utrecht or online</h1>
+          <p class="text-md md:text-xl">Currently no waiting time</p>
+          <p class="text-sm md:text-md">(updated on 10/08/2024)</p>
 
           <a href="#contact" class="mt-8 inline-block bg-transparent
                                     text-white-600 px-6 py-3 rounded-lg border-white border"
@@ -84,9 +108,9 @@
 
 
     <!-- About Section -->
-    <section class="pb-16 pt-8 font-light text-lg lg:text-xl" style="background-color: #f9e7c2;">
+    <section class="pb-16 py-16 font-light text-lg lg:text-xl" style="background-color: #fff3d5;">
       <div class="container mx-auto px-4 max-w-3xl">
-        <h1 class="text-4xl lg:text-5xl mb-4 mt-8" style="font-family: 'Sorts Mill Goudy', serif;">Agathe Eiselé</h1>
+        <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Agathe Eiselé</h1>
         <p class="max-w-3xl mx-auto mb-8">
           I was born in France and I have studied both in Switzerland and in
           the Netherlands. I hold two master’s degrees from the University of
@@ -100,14 +124,14 @@
           I am a sensitive person who is very attuned to people. Being a good
           listener and passionate about psychology, I naturally became a
           therapist. Providing mental support and guidance brings meaning to my
-          life and I deeply value the trust that people put in me.
+          life and I deeply value the trust that people place in me.
         </p>
         <img src="img/profile10.png" alt="Therapist" class="mx-auto p-4 xl:px-36">
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="pb-8 pt-12 font-light text-lg lg:text-xl" style="background-color: #fff3d5;">
+    <section class="pb-8 pt-12 font-light text-lg lg:text-xl" style="background-color: #f9e7c2;">
       <div class="container mx-auto px-4 max-w-3xl">
         <p class="max-w-3xl mx-auto mb-16">
           Growing up in the Alps, the contact with nature was an important
@@ -122,7 +146,7 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20" style="background-color: #f9e7c2;">
+    <section id="contact" class="py-20" style="background-color: #fff3d5;">
       <div class="container mx-auto max-w-3xl px-4">
         <h1 class="text-4xl lg:text-5xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Contact</h1>
         <h2 class="text-2xl lg:text-3xl mb-4" style="font-family: 'Sorts Mill Goudy', serif;">Schedule a free initial 30-minute appointment</h2>
@@ -160,27 +184,10 @@
       </div>
     </section>
 
-    <footer class="text-black py-4 text-center text-gray-500" style="background-color: #fff3d5;" >
+    <footer class="text-black py-4 text-center text-gray-500" style="background-color: #f9e7c2;" >
       <img src="img/nip.png" alt="Therapist" class="mx-auto w-48 my-8">
       <p>&copy; 2024 Agathe Eisele. All rights reserved.</p>
     </footer>
 
-    <script>
-      function toggle_menu() {
-      var menu = document.getElementById('menu');
-      menu.classList.toggle('hidden');
-
-      var menu_toggle = document.getElementById('menu-toggle');
-      menu_toggle.classList.toggle('hidden');
-      var menu_close = document.getElementById('menu-close');
-      menu_close.classList.toggle('hidden');
-
-      var website_name = document.getElementById('website-name');
-      website_name.classList.toggle('hidden');
-      };
-
-      document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
-      document.getElementById('menu-close').addEventListener('click', toggle_menu);
-    </script>
   </body>
 </html>
