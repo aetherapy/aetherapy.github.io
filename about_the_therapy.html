@@ -24,23 +24,6 @@
       })(window, document, "clarity", "script", "nn6vxme5xp");
     </script>
     <script>
-      function toggle_menu() {
-      var menu = document.getElementById('menu');
-      menu.classList.toggle('hidden');
-
-      var menu_toggle = document.getElementById('menu-toggle');
-      menu_toggle.classList.toggle('hidden');
-      var menu_close = document.getElementById('menu-close');
-      menu_close.classList.toggle('hidden');
-
-      var website_name = document.getElementById('website-name');
-      website_name.classList.toggle('hidden');
-      };
-
-      document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
-      document.getElementById('menu-close').addEventListener('click', toggle_menu);
-    </script>
-    <script>
       function toggleFAQ(button) {
       const content = button.nextElementSibling;
       button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
@@ -340,5 +323,24 @@
       <img src="img/nip.png" alt="NIP" class="mx-auto w-48 my-8">
       <p>&copy; 2024 Agathe Eisele. All rights reserved.</p>
     </footer>
+
+    <script>
+      function toggle_menu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+
+      var menu_toggle = document.getElementById('menu-toggle');
+      menu_toggle.classList.toggle('hidden');
+      var menu_close = document.getElementById('menu-close');
+      menu_close.classList.toggle('hidden');
+
+      var website_name = document.getElementById('website-name');
+      website_name.classList.toggle('hidden');
+      };
+
+      document.getElementById('menu-toggle').addEventListener('click', toggle_menu);
+      document.getElementById('menu-close').addEventListener('click', toggle_menu);
+    </script>
+
   </body>
 </html>
