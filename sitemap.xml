@@ -1,23 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.aetherapy.nl</loc>
-    <lastmod>2025-09-18</lastmod>
+    <loc>https://www.aetherapy.nl/en/</loc>
+    <lastmod>2026-04-17</lastmod>
   </url>
   <url>
-    <loc>https://www.aetherapy.nl/about_me.html</loc>
-    <lastmod>2025-09-18</lastmod>
+    <loc>https://www.aetherapy.nl/en/about_me.html</loc>
+    <lastmod>2026-04-17</lastmod>
   </url>
   <url>
-    <loc>https://www.aetherapy.nl/about_the_therapy.html</loc>
-    <lastmod>2025-09-18</lastmod>
+    <loc>https://www.aetherapy.nl/en/about_the_therapy.html</loc>
+    <lastmod>2026-04-17</lastmod>
   </url>
   <url>
-    <loc>https://www.aetherapy.nl/faq.html</loc>
-    <lastmod>2025-09-18</lastmod>
+    <loc>https://www.aetherapy.nl/en/faq.html</loc>
+    <lastmod>2026-04-17</lastmod>
   </url>
   <url>
-    <loc>https://www.aetherapy.nl/success.html</loc>
-    <lastmod>2025-09-18</lastmod>
+    <loc>https://www.aetherapy.nl/en/therapy_in_greek.html</loc>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.aetherapy.nl/en/success.html</loc>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.aetherapy.nl/en/cookies.html</loc>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.aetherapy.nl/fr/</loc>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.aetherapy.nl/fr/about_me.html</loc>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.aetherapy.nl/fr/about_the_therapy.html</loc>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.aetherapy.nl/fr/faq.html</loc>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.aetherapy.nl/fr/therapy_in_greek.html</loc>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.aetherapy.nl/fr/success.html</loc>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.aetherapy.nl/fr/cookies.html</loc>
+    <lastmod>2026-04-17</lastmod>
   </url>
 </urlset>
